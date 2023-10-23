@@ -3,25 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/vnd.microsoft.icon"
+      href="favicon.png"
+    />
     <title>Facebook - log in or sign up</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container mt-48 flex"></div>
-    <div class="left"></div>
-    <img class="w-60" src="fb.svg" />
-    <p class="text-red-500">Connect with friends and the world <br />around you on Facebook.</p>
-    <div class="right"></div>
-    <input type="text" placeholder="Email or Phone number">
-    <input type="password" placeholder="Password">
-   <button class="btn">Log In</button>
-    <span>Forget Password</span>
-    <hr>
-    <button class="btn">Create new account</button>
-    <div class="text-yellow-400 bg-black">hyu</div>
+  <body class="bg-gray-100">
+    <div class="container mt-48 flex mx-auto content-center justify-center">
+      <div class="left w-1/2 mx-14">
+        <img class="w-64" src="fb.svg" />
+        <p class="text text-3xl mx-6">
+          Connect with friends and the world around you on Facebook.
+        </p>
+      </div>
 
-    
-      
+      <div
+        class="right flex flex-col bg-white p-8 rounded-lg w-1/4 relative shadow-sm shadow-gray-500"
+      >
+        <input
+          class="px-4 my-2 h-12 border border-1 border-gray-400 rounded-lg outline-blue-400"
+          type="text"
+          placeholder="Email or Phone number"
+        />
+        <input
+          class="px-4 my-2 h-12 border border-1 border-gray-400 rounded-lg outline-blue-400"
+          type="password"
+          placeholder="Password"
+        />
+        <button
+          class="bg-blue-500 text-white my-2 py-2 rounded-lg font-bold text-1xl hover:bg-blue-700"
+        >
+          Log In
+        </button>
+        <span
+          class="text-blue-500 cursor-pointer text-center my-2 text-sm hover:underline"
+          >Forget Password</span
+        >
+        <hr />
+        <button
+          class="bg-green-600 hover:bg-green-700 text-white my-2 py-2 rounded-lg font-bold text-1xl w-fit content-center mx-auto px-4"
+        >
+          Create new account
+        </button>
+        <span class="absolute -bottom-9 text-xs w-auto mr-auto"
+          ><span class="font-bold cursor-pointer hover:underline"
+            >Create a Page</span
+          >
+          for a celebrity, brand or business.</span
+        >
+      </div>
     </div>
   </body>
 </html>
